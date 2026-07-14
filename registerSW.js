@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/printz-herramientas-app/sw.js', { scope: '/printz-herramientas-app/' })})}

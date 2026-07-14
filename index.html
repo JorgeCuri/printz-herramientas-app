@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#201F1E" />
+    <title>Printz Herramientas</title>
+    <link rel="icon" type="image/svg+xml" href="/printz-herramientas-app/brand/printz-isotipo-color.svg" />
+    <!-- Ícono de "Añadir a pantalla de inicio" en iPhone/iPad (el manifest PWA solo se
+         inyecta en el build:pwa; este link es inofensivo en Electron/escritorio). -->
+    <link rel="apple-touch-icon" href="/printz-herramientas-app/pwa/apple-touch-icon.png" />
+    <!-- Fuente y Tailwind autoalojados (public/vendor): la app debe correr sin internet
+         en los equipos del taller. Tailwind es el script Play CDN pineado a 3.4.16. -->
+    <link href="/printz-herramientas-app/vendor/fonts.css" rel="stylesheet" />
+    <script src="/printz-herramientas-app/vendor/tailwind-play.js"></script>
+    <script>
+      // Tokens de GUIA_ESTILO_PRINTZ.md — fuente de verdad visual, no reinventar la paleta.
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              printz: {
+                app: "#F7F3EF", // fondo de app
+                canvas: "#EDE8E2", // fondo exterior / lienzo
+                paper: "#FBF8F4", // fondo de pliego (papel)
+                soft: "#F7F3EF", // panel tenue dentro de tarjeta
+                dark: "#201F1E", // sidebar/headers/ticket
+                ink: "#201F1E", // texto principal
+                sub: "#6B6462", // texto secundario
+                muted: "#8A8480", // texto terciario
+                red: "#DD1F40", // acción / selección
+                redhover: "#B8172F",
+                redlink: "#8F1226",
+                selection: "#FCEEE9", // relleno selección suave
+                cafe: "#A35D2C", // acento módulos / aviso
+                dorado: "#8A6D1F",
+                grafito: "#4A4744",
+                ok: "#2F7D56",
+                okbg: "#E4F2EA",
+                info: "#3E6E8E",
+                infobg: "#E8F1F6",
+                warn: "#A35D2C",
+                warnbg: "#FBEDE3",
+                warnborder: "#E8C4A8",
+              },
+            },
+            fontFamily: {
+              manrope: ["Manrope", "system-ui", "sans-serif"],
+            },
+            borderColor: {
+              line: "rgba(32,31,30,.08)",
+              linestrong: "rgba(32,31,30,.15)",
+            },
+          },
+        },
+      };
+    </script>
+    <script type="module" crossorigin src="/printz-herramientas-app/assets/index-CvaKfOLh.js"></script>
+    <link rel="stylesheet" crossorigin href="/printz-herramientas-app/assets/index-BYpLX0gs.css">
+  <link rel="manifest" href="/printz-herramientas-app/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/printz-herramientas-app/registerSW.js"></script></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
